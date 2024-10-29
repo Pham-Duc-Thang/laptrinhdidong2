@@ -30,7 +30,7 @@ const PaymentMethod = () => {
     };
 
     return (
-        <View style={styles.container}>
+        <View style={styles.container}  >
             <Text style={styles.title}>Chọn phương thức thanh toán</Text>
 
             <View style={styles.option}>
@@ -75,7 +75,7 @@ const PaymentMethod = () => {
                     <>
                         <Picker
                             selectedValue={selectedBank}
-                            style={styles.picker}
+                            style={styles.pickers}
                             onValueChange={(itemValue) => setSelectedBank(itemValue)}
                         >
                             <Picker.Item label="Chọn ngân hàng" value="" />
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
         padding: 20,
         fontFamily: 'Arial, sans-serif',
         backgroundColor:"#fff",
-        height: "100px" ,
+        height:700,
 
     },
     title: {
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#ccc',
         padding: 10,
-        marginTop: 5,
+        marginTop: 20,
     },
     picker: {
         height: 50,
@@ -153,6 +153,14 @@ const styles = StyleSheet.create({
     buttonText: {
         color: '#fff',
         fontSize: 16,
+    },
+    pickers: {
+      height: 50,
+      marginBottom: 20,
+      borderWidth: 1,
+      borderColor: '#000',
+      borderRadius: 10,
+      paddingBottom:200,
     },
 });
 

@@ -12,6 +12,7 @@ import {
   Alert,
   Dimensions,
   ScrollView,
+  SectionList,
 } from 'react-native';
 
 const DATA = [
@@ -231,6 +232,7 @@ const App = () => {
           renderItem={({ item }) => <Item {...item} />}
           numColumns={2}
           columnWrapperStyle={styles.row}
+          scrollEnabled={false}
         />
       </ScrollView>
     </SafeAreaView>
