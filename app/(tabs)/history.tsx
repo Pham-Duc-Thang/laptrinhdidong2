@@ -163,14 +163,17 @@ const App = () => {
       )}
 
       <TextInput
-        style={styles.input}
+        style={[styles.input, { color: 'black' }]}
         placeholder="Tên khách hàng"
+        placeholderTextColor="black"
         value={name}
         onChangeText={setName}
+        
       />
       <TextInput
         style={styles.input}
         placeholder="Email"
+        placeholderTextColor="black"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
@@ -178,6 +181,7 @@ const App = () => {
       <TextInput
         style={styles.input}
         placeholder="Số điện thoại"
+        placeholderTextColor="black"
         value={phone}
         onChangeText={setPhone}
         keyboardType="phone-pad"
@@ -185,6 +189,7 @@ const App = () => {
       <TextInput
         style={styles.input}
         placeholder="Địa chỉ giao hàng"
+        placeholderTextColor="black"
         value={shippingAddress}
         onChangeText={setShippingAddress}
       />
@@ -257,7 +262,6 @@ const styles = StyleSheet.create({
   totalText: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginVertical: 20,
   },
   input: {
     height: 50,

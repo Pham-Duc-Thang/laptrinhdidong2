@@ -41,23 +41,25 @@ export default function LoginScreen() {
       <TextInput
         style={styles.input}
         placeholder="Tên người dùng"
+        placeholderTextColor="black"
         value={username}
         onChangeText={setUsername}
       />
       <TextInput
         style={styles.input}
         placeholder="Mật khẩu"
+        placeholderTextColor="black"
         value={password}
         onChangeText={setPassword}
         secureTextEntry
       />
-      <Button title="Đăng Nhập" onPress={handleLogin} />
+      <Button title="Đăng Nhập" onPress={handleLogin}  />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', padding: 20 },
+  container: { flex: 1, justifyContent: 'center', padding: 20,backgroundColor:"#fff" },
   title: { fontSize: 24, fontWeight: 'bold', textAlign: 'center', marginBottom: 20 },
-  input: { borderWidth: 1, padding: 10, marginBottom: 10, borderRadius: 5 },
+  input: { borderWidth: 1, padding: 10, marginBottom: 10, borderRadius: 5, },
 });

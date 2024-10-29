@@ -279,7 +279,7 @@ const styles = StyleSheet.create({
   },
   productImage: {
     width: '100%',
-    height: 120,
+    height: 400,
     recolorMode: 'cover',
     borderRadius: 10,
     marginBottom: 5,

@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   },
   banner: {
     width: '100%',
-    height: 200,
+    height: 50,
     resizeMode: 'cover',
     marginBottom: 10,
   },
@@ -331,7 +331,7 @@ const styles = StyleSheet.create({
   },
   productImage: {
     width: '100%',
-    height: 500,  // Increase the height
+    height: 200,  // Increase the height
     resizeMode: 'cover',
     borderRadius: 10,
     marginBottom: 5,
